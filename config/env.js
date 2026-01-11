@@ -4,10 +4,15 @@ config({ path: `.env.${process.env.NODE_ENV || 'development'}.local` });
 
 export const { 
     PORT,
+    SERVER_URL,
     NODE_ENV,
     DB_URI,
     JWT_SECRET,
     JWT_EXPIRES_IN,
     ARJECT_KEY,
-    ARJECT_ENV
+    ARJECT_ENV,
+    QSTASH_URL,
+    QSTASH_TOKEN,
+    EMAIL_PASSWORD,
+    EMAIL
 } = process.env;
